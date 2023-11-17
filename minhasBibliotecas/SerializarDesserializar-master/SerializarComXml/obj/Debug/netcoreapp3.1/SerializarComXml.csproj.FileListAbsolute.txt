@@ -1,0 +1,13 @@
+C:\Users\davin\source\repos\SerializarComXml\SerializarComXml\bin\Debug\netcoreapp3.1\SerializarComXml.exe
+C:\Users\davin\source\repos\SerializarComXml\SerializarComXml\bin\Debug\netcoreapp3.1\SerializarComXml.deps.json
+C:\Users\davin\source\repos\SerializarComXml\SerializarComXml\bin\Debug\netcoreapp3.1\SerializarComXml.runtimeconfig.json
+C:\Users\davin\source\repos\SerializarComXml\SerializarComXml\bin\Debug\netcoreapp3.1\SerializarComXml.runtimeconfig.dev.json
+C:\Users\davin\source\repos\SerializarComXml\SerializarComXml\bin\Debug\netcoreapp3.1\SerializarComXml.dll
+C:\Users\davin\source\repos\SerializarComXml\SerializarComXml\bin\Debug\netcoreapp3.1\SerializarComXml.pdb
+C:\Users\davin\source\repos\SerializarComXml\SerializarComXml\obj\Debug\netcoreapp3.1\SerializarComXml.csprojAssemblyReference.cache
+C:\Users\davin\source\repos\SerializarComXml\SerializarComXml\obj\Debug\netcoreapp3.1\SerializarComXml.AssemblyInfoInputs.cache
+C:\Users\davin\source\repos\SerializarComXml\SerializarComXml\obj\Debug\netcoreapp3.1\SerializarComXml.AssemblyInfo.cs
+C:\Users\davin\source\repos\SerializarComXml\SerializarComXml\obj\Debug\netcoreapp3.1\SerializarComXml.csproj.CoreCompileInputs.cache
+C:\Users\davin\source\repos\SerializarComXml\SerializarComXml\obj\Debug\netcoreapp3.1\SerializarComXml.dll
+C:\Users\davin\source\repos\SerializarComXml\SerializarComXml\obj\Debug\netcoreapp3.1\SerializarComXml.pdb
+C:\Users\davin\source\repos\SerializarComXml\SerializarComXml\obj\Debug\netcoreapp3.1\SerializarComXml.genruntimeconfig.cache
