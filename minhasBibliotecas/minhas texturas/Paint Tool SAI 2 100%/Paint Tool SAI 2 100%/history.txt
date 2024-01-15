@@ -1,0 +1,839 @@
+--------------------------------------------------------------------------------------------------------------------------------------------
+2016-07-30
+
+[New Features]
+
+- Shortcuts for layer mask operations.
+
+
+[Fixed Bugs]
+
+- [Layer Mask] Apply button and Link button on layer list item do not work.
+
+- [Canvas] The position of un-linked Layer mask is not moved when the canvas size was changed.
+
+- [Selection] Some square halls appears when dilate or erode the selection.
+
+- [Transform] When transformed layers with selection, the floaters do not come to be able to operate if the bottom floater is empty.
+
+- [Text Tool] Access violation occurs when changed the scaling of user interface.
+
+- [Brush Tools] Heavy delay for drawing occurs on some bristles.
+
+- [Bucket Tool] Tile form artifacts appear when filling a region with a transparent color.
+
+- [Color Adjustment] Preview checkbox does not affect layers other than the top layer in the multi selected layers.
+
+
+[Changes]
+
+- [Layer Mask] Changed to treat transparent color as white.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2016-07-27
+
+[New Features]
+
+- Cut, Copy and Paste operation for linework layer and shape layer.
+
+- Shortcuts for layer attributes.
+
+- Shortcuts for view switching.
+
+
+[Fixed Bugs]
+
+- [Navigator] The scale track bar and the angle track bar does not work correctly.
+
+- [Navigator] The position indicater does not update.
+
+- [Layer] Access violation occurs when operate an empty layer folder on the bottom of the layer list.
+
+- [Layer Mask] Paint color has inconsistency if the layer mask is the invert mode.
+
+- [Layer Merge] Access violation occurs when a clipping group includes an invisible layer.
+
+- [Layer Merge] When merge a clipping group, invisible layers stay after merging.
+
+- [Linework Layer] Sometimes internal selection status of paths are kept after deselection.
+
+- [Linework Layer] After reverse or 90deg rotation, cannot operate paths.
+
+- [Gaussian Blur] Does not apply blur correctly when pixel opacity is preserved.
+
+- [Lasso Tool] Polygonal subtraction does not work if Alt key is not pressed when finishing plot.
+
+- [Bucket Tool] The regions that have same color as paint color are not excluded from fill.
+
+- [Pressure Tool] CCannot change the density pressures.
+
+
+[Changes]
+
+- [Layer Merge] The restriction about a clipping-group on multi selection is removed.
+
+- [Brush Tool] Changed the blending operation for size circle to same operation on Ver.1.
+
+
+And some other small changes and small bug fixes...
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2016-06-24
+
+[New Features]
+
+- Create Selection by Layer Folder
+
+- Nudge for a transformation image by the arrow keys.
+
+
+[Fixed Bugs]
+
+- [Color Mixer] Cannot register color after picked up color from Color Mixer.
+
+- [Navigator] The scale track bar and the angle track bar does not work correctly.
+
+- [Canvas] Layer thumbnail breaks if the canvas size is larger than 256M pixels.
+
+- [Canvas] Reverse Canvas and Rotate Canvas does not process layer mask.
+
+- [Layer] Cannot transfer layer between canvases by drag and drop operation.
+
+- [Layer] Cannot apply color adjustment filters for a layer folder.
+
+- [Layer] Apply Layer Mask button is enabled for a layer other than normal layer.
+
+- [Shape Layer] Cannot transform shapes.
+
+- [Brush Tools] The sliders do not accept operation on the brush tool popup window(Ctrl+Alt).
+
+- [Brush Tools] The dot mouse cursor is not appears for Eraser, Binary Pen and Pen tools.
+
+
+[Changes]
+
+- [Layer] Changed to be able to cut, copy and move images in a folder with selection when a layer folder is selected.
+
+- [Layer] Select and Move Layer feature is enabled even if a selection is existing.
+
+- [Layer] Changed to be able to select a layer by click on the thumbnail space.
+
+- [Panels] Changed to be able to open a layer property and a tool property by a double click.
+
+- [Fringe/Layer Paper] Adjusted the color effect.
+
+- [Fringe/Layer Paper] "Deep" mode and "Multiply" mode added.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2016-06-20
+
+[Fixed Bugs]
+
+- [Recent Files] SAI stops by error when the recent files list is empty.
+
+- [Canvas Save/Load] Canvas background color is not handled correctly.
+
+- [SAI Floamt] Layer mask is not loaded correctly.
+
+- [JPEG Format] Error popups appears on the bottom-right of window when try to load CMYK colored JPEG file.
+
+- [Layer] Access violation occurs when a sole image layer is deleted.
+
+- [History] SAI sometimes malfunctions when undo images outside Canvas.
+
+
+[Changes]
+
+- [SAI Format] Changed to display a notification when try to load *.sai file that created by SAI of the beta test age.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2016-06-19
+
+[New Features]
+
+- File format support for JPEG, PNG and TGA
+
+- File loading support for SAI Ver.1 format(*.sai)
+
+- HSV/HSL Slider, Color Mixer, Swatches
+　(Scratch Pad will be discontinued)
+
+- Shortcuts for layer visibility
+
+- Shortcuts for layer item selection on the layer list
+
+- Shortcuts for syringe
+
+- Merge Visible Layers, Flatten Image
+
+- Dilate Selection 1px, Erode Selection 1px
+
+- Filters
+　+ Hue/Satulation
+　+ Brightness/Contrast
+　+ Gaussian Blur
+
+- Visibility option for Brush Size Circle
+
+- Dot Cursor for Brush Tools
+
+- Painting Mode for Brush Tools
+
+
+[Fixed Bugs]
+
+- [Recent Files] Access violation occurs about long path name.
+
+- [Brush Tools] Rotation and Reverse of view are not applied to the direction of stylus.
+
+- [Water Color] Blur effect does not work correctly when the brush size is smaller than 15.
+
+- [Marker] Marker does not work correctly when the density is not 100.
+
+- [Linework Layer] Pressure CP creation option of Pen does not work.
+
+- [Layer Move] Rotation and Reverse of view are not applied to Layer Nudge.
+
+- [Perspective Ruler] Creation shortcut key does not work for Perspective Ruler and Perspective Grid.
+
+- [Marquee] Selection to top-left from bottom-right does not work.
+
+- [Selection] Garbage appears around the bounding box of selection with dilation and erosion.
+
+- [Change Canvas Resolution] Resolution change sometimes fails.
+
+- [Trim Canvas by Selection] Pixels outside canvas are not cut down.
+
+
+[Changes]
+
+- [Custom Tool Tray] Changed the behavior of item drag operations to same as Ver.1.
+
+- [Error Detection] Changed to record errors into error log.
+
+- [WinTab Control] Changed to ignore error about inquiry for the version information.
+
+- [Canvas] Added background color options.
+
+- [View] Changed the maximum scale to 3200% from 1600%.
+
+- [Layer Merge] Changed to insert a merged layer to the location that the current layer was gone.
+
+- [Fringe/Layer Paper] Improved the color effect to avoid somberness.
+
+- [Fringe/Layer Paper] Added "Layer Effect Color" options in Canvas menu.
+  ("Vivid Fringe" was moved into "Layer Effect Color" options, and the name was changed as "Vivid")
+
+- [Syringe] Added an option to pick up color while dragging.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2016-03-19
+
+[Fixed Bugs]
+
+- [Marker Tool] Does not work correctly.
+
+- [sai2.ini] "AlwaysUseTabletPcApi" is specified as "y" by mistake.
+
+
+[Changes]
+
+- [Tablet Input] Changed to never load WinTab API DLL when using TabletPC API.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2016-03-17
+
+[New Features]
+
+- Binary Pen
+
+- [Binary Color] effect
+  (This effect is added into [Layer Effect] settings.)
+
+
+[Fixed Bugs]
+
+- [New Canvas] [Preset] does not work correctly.
+
+- [Layer] Grayed status of layer attribute controls for an invisible layer are removed when selected an invisible layer.
+
+- [Layer Mask] Creation of Selection with layer mask image does not work correctly.
+
+- [Layer Mask] White(RGB(255,255,255)) is always used on "Fill Layer" function.
+
+- [View] Access violation occurs when closed a view.
+
+
+[Changes]
+
+- [Brush Tools] Tuned the effect of "Amplify Density" parameter.
+  (If you set 100 in "Amplify Density", the drawn line will resemble Ver.1.)
+
+- [Brush Tools] [Ver1 Prs Spec.] parameter added.
+  (If turn on this parameter, the calculation for brush density pressure is changed to the specification of Ver.1)
+
+- [Linework Layer] Disabled the rectangular selection for pressure control points on other than pressure tool.
+
+- [Linework Layer] Enabled the select and move function(Ctrl+Shift+Drag) on a linework layer.
+
+- [Panels] Changed to always show a scroll bar for the color and tool pane.
+
+- [Gradation Tool] Improved the quality of gradation.
+
+- [Image Transformation] Restricted the ringing artifacts about pixel transparency for the bicubic and lanczos resampling.
+
+- [Change Canvas Resolution] Changed to include the width of fringe and the scale of layer paper.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2016-01-24
+
+[Fixed Bugs]
+
+- [Change Canvas Resolution] The canvas size turns out as 0px x 0px when changed the printing resolution if the size unit is %.
+
+- [Layer] SAI freezes when the scrollbar of color and tool panels switched visibility by layer change on edit.
+
+- [Linework Layer] Pressure contol points break when connect strokes.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2016-01-23
+
+[Fixed Bugs]
+
+- [SAI2 File] Loading of .sai2 file fails if the .sai file includes perspective ruler or perspective grid.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2016-01-22
+
+[New Features]
+
+- Create canvas by clipboard data
+
+- Recent files
+
+- Close canvas
+
+- Copy layer on different canvases.
+  (Drag layer item to other view from the layer list)
+
+- Reset position for view (Hand tool, Zoom tool)
+
+- Reset angle for view (Rotate tool)
+
+
+[Fixed Bugs]
+
+- [Tool] The names is switched between Lasso tool and Magic Wand tool.
+
+- [Layer] A layer item does not scrooll-in on the layer list by Select & Move operation.
+
+- [Layer] Access violation occurs when transfer a linework layer or a shape layer.
+
+- [Selection] Erosion and Dilation bring an access violation.
+
+- [PSD File] Access violation occurs on "Change Canvas Size" dialog and "Change Canvas Size" dialog with misusing for size unit in PSD file.
+
+- [Shorcut Key] The change for shortcut key not apply to the main menu while SAI is running.
+
+- [Gradation Tool] After creation of a gradation tool, an access violation occurs when reverse the direction.
+
+
+[Changes]
+
+- [Gradation Tool] Improved the quality of gradation.
+
+- [Gradation Tool] Always hit a nearest control point of the guide.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2016-01-19
+
+[New Features]
+
+- [Canvas] Change Resolution
+
+- [Canvas] Change Size
+
+- [Canvas] Reverse Horizontal, Reverse Vertical, Rotate 90deg. CCW and Rotate 90deg. CW
+
+- [Canvas] Trim with Bounding Box of Selection
+
+- [Layer] Convert Luminance to Opacity
+
+- [Layer] Transform
+
+- [Layer] Reverse horizontal, Reverse vertical, Rotate 90deg. CCW and Rotate 90deg. CW
+
+- [Layer] Create Selection by Layer Image
+                 Ctrl + Click on Layer Thumbnail ... Replace
+         Shift + Ctrl + Click on Layer Thumbnail ... Add
+   Alt +         Ctrl + Click on Layer Thumbnail ... Delete
+   Alt + Shift + Ctrl + Click on Layer Thumbnail ... And
+
+- [Ruler] 2VP and 3VP Perspective Grid
+
+- [Tool] Gradation Tool
+
+- [sai.ini] Add settings to avoid bugs on tablet drivers.
+
+
+[Fixed Bugs]
+
+- [Mouse] Mouse wheel does not work correctly with some devices.
+
+- [Window] Does not preserve the window size of frame window.
+
+- [Window] High DPI monitor breaks the layout of the current colors.
+
+- [View] Some parts of selection border sometimes disappears.
+
+- [View] Child view sometimes stops the window painting when switch to floating view.
+
+- [Layer] Access violation occurs when fill floating part.
+
+- [Layer] "Select & Move Layer" includes invisible layer and hidden part.
+
+- [Brush tools] Access violation occurs when read a bristle data includes elements more than 64.
+
+- ["Brush" and "Water Color"] The color blending involves irrelevant colors outside brush pattern.
+
+- [SelPen, SelErs] Ctrl+Alt(change of brush size) does not work.
+
+- [Text Layer] Enter key does not work.
+
+- [Text Layer] Text outside canvas sometimes disappear.
+
+- [Perspective Ruler] Duplicated ruler does not work.
+
+- [Ruler, Perspective Ruler] Ruler disappears when press space key.
+
+- [Erosion, Dilation for Selection] Erosion and dilation freezes when a layer mask is selecting.
+
+- [PSD File] "Layer opacity" property on SAI is replaced by "Paint" property on Photoshop.
+
+
+[Changes]
+
+- [Shortcut Key] Preserve shortcut key settings of unsupported functions.
+
+- [Canvas] The canvas background color settings moved to menu from layer tray.
+
+- [View] Restrict the break out of canvas from view when repeat zoom in and zoom out.
+
+- [Pen Tablet] Support tail switch.
+
+- [Brush Tools] "Ignore ruler mode" and "Straight line mode" buttons added into the quick bar.
+  The effect keyed operation for these functions are abolished.
+
+- [Brush Tools] Restrict pressure gain for start of brush strokes.
+
+- [Brush Tools] The settings for direction and randomize for bristle added.
+
+- [Brush Tools] The settings for scratch for brush texture added.
+
+- [Brush Tools] The settings for amplification for brush density added
+
+- [Water Color] The feeling for blur improved.
+
+- [Marker] The quality for downward sloped density improved.
+
+- [SelPen, SelErs] The internal density of 100% is amplified. (Same to Ver.1)
+
+- [Canvas] The file extension for temporary file on saving process is changed.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2015-10-19
+
+[New Features]
+
+- Magic Wand and Bucket
+  (Please create Bucket tool from the context menu of the custom tools tray if you have executed a older version of SAI2.)
+
+- Lasso
+
+- Cut, Copy and Paste for image
+
+- Rasterization for linework layer, text layer and shape layer
+
+- Dilation and Erosion for selection region.
+
+
+[Fixed Bugs]
+
+- "Merge Layer" obtains malfunction with layer that moved to outside canvas.
+
+- "SelPen" and "SelErs" obtains malfunction on the right edges and the bottom edges of canvas.
+
+- Selection region sometimes does not appear correctly when the selection display mode was changed.
+
+- Initialization of WinTab-API fails on some tablet drivers other than Wacom.
+
+- Enter key and Esc key do not work for Curve and Line tool after the using of Shortcut Keys dialog.
+
+- The following layer operations do not work correctly on a canvas that loaded from *.sai2 file.
+  - Open and Close for layer folder
+  - Multi layers selection
+  - Change for layer protections
+
+- The context menu for shape layer tools does not include functions to create shape layer tools.
+
+- Undo and Redo for text layer do not work if the history data was purged into storage device.
+
+
+[Changes]
+
+- Improved the behavior of Merge Layer.
+  - It came to work for multiple selected layers
+  - It came to merge a clipping group independently.
+
+- It came to handle the opacity of the following blend modes as "Fill" on PSD file.
+  - Shade
+  - Shine
+  - Shade/Shine
+  - Burn
+  - Dodge
+  - Burn/Dodge
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2015-07-18
+
+[Fixed Bugs]
+
+- "Save" for any format obtain an internal error if the pixel width of the canvas is an odd number and the background color is transparent.
+
+- "Save" for .sai2 format obtain an internal error if the canvas has layer folder.
+
+- "Save" for .bmp format output incorrect information for the existing of the transparency.
+
+- Undo and Redo obtain malfunction after painted layer was moved to outside canvas.
+
+- After a layer folder integrated as a layer, "Layer Paper" of the layer disappears.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2015-07-10
+
+[New Features]
+
+- Syringe for merged image.
+
+- Syringe for deactived view.
+
+- Select and move layer. (Ctrl + Shift + Drag)
+
+- Nudge for layer (Ctrl + Arrow Keys(Cut and move), Alt + Arrow Keys(Only selection), Shift key increases the stride)
+
+
+[Fixed Bugs]
+
+- The brush settings popup of Ctrl + Alt is always displaying on the view created first.
+
+- "Open" for any format sometimes obtain a reading error.
+
+- [Memory Usage] does not work.
+
+- Combination of layer moves do not update the modifying state from the second moving.
+
+- Memory starvation brings crash immediately.
+
+
+[Changes]
+
+- Renewed completely the history management for painting.
+
+- Sped up "Open" and "Save" for *.sai2 format with the malti-core programming.
+
+- Improved the quality of bristles instead of the speed.
+
+- Added [Drive Space] information into the status bar.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2015-04-25
+
+[Fixed Bugs]
+
+- Create PSD file that is not able to read by Photoshop if an empty layer is placed under a painted layer.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2015-04-24
+
+[Fixed Bugs]
+
+- Protection of pixel's opacity does not work.
+
+- Can not save and load layer masks correctly in PSD format.
+
+- RGB values of merged image of PSD file are incorrect.
+
+- Quick combination of "MoveLayer -> Paint -> MoveLayer" bring some malfunctions.
+
+- Deselect region sometimes does not erase selection border.
+
+- Undo and Redo for layer name does not work correctly.
+
+
+[Changes]
+
+- Preserve newer version's settings even if older versions is launched.
+  (The path of settings file was changed. Sorry, please make your settings again.)
+
+- Added settings to show the system menu by Alt + Space.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2015-04-22
+
+[Fixed Bugs]
+
+- Create PSD file that is not able to read by Photoshop
+
+- Can not undo Bezier handles in change of path type.
+
+- "Transfer Painting into Next Layer" function does not erase control points of paths.
+
+-  Space + EffectKey + Drag does not work when control points is displayed.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2015-04-21b
+
+[Fixed Bugs]
+
+- Access violation occurs when a menu is opened.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2015-04-21a
+
+[Fixed Bugs]
+
+- The save canvas function for PSD/PSB format obtains access violations.
+
+
+[Changes]
+
+- Added new modified statuses for a canvas.
+  (The statuses will appear in title bar as the following.
+      * ... The canvas is not saved.
+      ! ... The canvas was saved as a format other than sai2, but some SAI specific information are not saved.
+      - ... Some information not recorded into History are not saved.(e.g. Layer visibility))
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2015-04-21
+
+[Fixed Bugs]
+
+- Curve tool and Line tool obtain an access violation from first click.
+
+- Can not redo the duplication of paths.
+
+- 'Select All' obtains access violations on some canvas sizes.
+
+- History combining is not applied for moving of selection region.
+
+- Pressure tool for densities does not work.
+
+
+[Changes]
+
+- Changed custom tool set of layer folder, text layer and perspective ruler to the set of normal layer.
+
+- Added the prohibition cursor for unpaintable layer.
+
+- Added specific mouse cursors for Eraser, Mask Pen and Mask Eraser.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2015-04-20
+
+[New Features]
+
+- File format support for PSD and PSB
+
+- New layer blending mode.
+
+- Layer mask
+
+- Background color setting for canvas
+
+- Shortcut key for brush tools (about size, density)
+
+
+[Fixed Bugs]
+
+- Zoom and angle track bar of the navigator drop the display result when operated quickly.
+
+- Can not create canvas when the horizontal width is less than 32px.
+
+- Bristle brush brings broken painting. (32bit version only)
+
+- Some unrelated closed folders are opened when using Undo and Redo.
+
+- The visibility settings of a 'Pass' mode layer folder does not work correctly.
+
+- Merge for a layer folder does not work.
+
+- System ID is sometimes changed after rebooted computer.
+
+- Brush form and texture settings is not saved if the name included other than ascii characters.
+
+- Combination of 'Overlay' mode and paper texture brings a broken blending result.
+
+- Can not start program if the path of 'My Documents' was changed into a root directory.
+
+- Canvas is closed without the confirmation dialog if it undid all operations.
+
+- Tooltip is displayed outside of screen.
+
+
+[Changes]
+
+- Suppressed the delay of the stroke starting. (Windows 8/8.1)
+
+- Added the settings for force using of TabletPC API.
+
+- Changed the tool toggle function to a clear behavior.
+
+And, adjusted some features.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2015-01-20
+
+[Fixed Bugs]
+
+- Loading of .sai2 file is failed in some cases.
+
+- Can not remove shortcut key from tool property.
+
+- Default shortcut keys are not appeared.
+  (Please press [Reset to Defaults] in [Shortcut Key Assignments] dialog if you have executed a older version of SAI2.)
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2015-01-19
+
+[New Features]
+
+- Marker tool
+  (Please create Marker tool from the context menu of the custom tools tray if you have executed a older version of SAI2.)
+
+- Navigator
+
+- Shortcut Key Assignment dialog
+
+- Options dialog (Minimum features)
+
+
+[Fixed Bugs]
+
+- Eraser tool does not detect an intersection of horizontal stroke and vertical stroke.
+
+- Access violation occurs when Syringe is used in Layer Folder.
+
+- Brush tool and Water Color tool does not blend the current color if "Dilution" is larger or equal 1.
+
+- The program does not draw anything of the maximized normal view if Floating View is existing.
+
+- The program does not switch control mode correctly to the mouse operation from the pen tablet operation.
+
+- The program does not draw selection borders correctly.
+
+- Brush tool and Water Color tool include outer pixels of the canvas for blending.
+
+- The maximum width and height of texture 'less than 1024x1024' not 'less or equal 1024x1024'.
+
+- The program does not detect correctly the release of multiple keys.
+
+- The program destroys history data file in some cases.
+
+
+[Changes]
+
+- The program display a detailed error in initialization of data folders.
+
+- Changed order of buttons in the confirmation dialog of the canvas closing to same as Ver.1.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2015-01-02
+
+- A first English preview version is released
+
+
+[Fixed Bugs]
+
+- The program does not detect the correct vanishing point of the stroke for perspective rulers.
+
+- Access violation occurs when layers that is larger than the canvas are merged.
+
+- The program hang up when particular keys are pressed.
+
+
+[Changes]
+
+- The execution filename changed to "sai2.exe" from "sai.exe".
+  (This change will avoid a malfunction of Wacom tablet driver.)
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2015-01-01
+
+[Fixed Bugs]
+
+- The program used uninitialized pressure data to blend for Brush tool and Water Color tool.
+
+- Access violation occurs when a second instance of the program is started.
+
+- Bristle definition bitmaps are lacked from the distribution package.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2014-12-31
+
+[New Features]
+
+- Linework layer
+  + Imploved the curve algorythm.
+  + Implemented the bezier curve mode.
+  + Implemented erasing to intersection (Eraser tool).
+  etc...
+
+- Shape layer(Included minimum features)
+
+- Save and Load functions for the private format(.sai2) and Bitmap(.bmp)
+
+
+[Etc.]
+
+- Many features is added into the base of the program from 2013-12-10 version.
+
+- Many problems is fixed from 2013-12-10 version.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2013-12-10
+
+- A preview version is released.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+2011-10
+
+- The development of Ver.2 is started.
+
+
