@@ -1,0 +1,19 @@
+{
+    "name": "AshemblyVisitantes",
+    "rootNamespace": "Visitantes",
+    "references": [
+        "GUID:d034b6af20464954ba58ec3b18bcd3f1",
+        "GUID:00c6e6ad9b05a8341a3f51a4b7d445d1",
+        "GUID:cb5a447b9e30f4f429a270040383ebbc",
+        "GUID:3fcc23bbbc9402a4fa21a07b66c1c69e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee1ad2a2647b05e479858fb28fc830ad, type: 3}
+  m_Name: InvetarioVazio
+  m_EditorClassIdentifier: 
+  _inventario:
+  - data: {fileID: 11400000, guid: 34b66c8d6fc35424681b9515a02e5e8a, type: 2}
+    quantidade: 214747927
+  - data: {fileID: 11400000, guid: 26e5b39cd51396e448d377626bd9f63c, type: 2}
+    quantidade: 19999880
