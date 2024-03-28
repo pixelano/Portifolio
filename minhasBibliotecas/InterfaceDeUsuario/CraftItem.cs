@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class CraftItem : MonoBehaviour
 {
     public List<API_Grid> listaDeItensParaOCraft;
-    public scriptavelReceitas receitaAlvo;
+    public itensEmEstoque receitaAlvo;
 
     public RawImage icone;
     public bool receitaLiberada;
@@ -37,7 +37,7 @@ public class CraftItem : MonoBehaviour
         else
         {
             bool temp = true;
-            foreach(var x in receitaAlvo.receita)
+            foreach(var x in receitaAlvo.necessarios)
             {
                 bool temp_b = false;
              
@@ -46,7 +46,7 @@ public class CraftItem : MonoBehaviour
                        
                        foreach(var b in a.inventario)
                             {
-                                if (b.id_ == x.item.id_)
+                                if (b.id_ == x.item.itemDrop.data.id_)
                                 {
                                     temp_b = true;
                                     break;

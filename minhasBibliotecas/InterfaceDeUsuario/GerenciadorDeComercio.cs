@@ -3,22 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[CreateAssetMenu(fileName = "NovoItemItemCataogo", menuName = "Itens/NovoItemItemCataogo", order = 1)]
+public class itensEmEstoque : ScriptableObject
+{
+    public ScriptavelItemData itemData;
+    public int valor;
+    public GameObject obj;
+    public bool disponivel;
+
+    public List<recip> necessarios;
+    [System.Serializable]
+    public class recip {
+        public ScriptavelItemData item;
+        public int quantidade;
+    }
+
+
+}
 public class GerenciadorDeComercio : MonoBehaviour
 {
     public List<itensEmEstoque> ItensAVenda;
     public GameObject prefab;
-  
-    [System.Serializable]
-    public class itensEmEstoque {
-        public ScriptavelItemData itemData;
-        public int valor;
-        public GameObject obj;
-        public bool disponivel; // implementar
 
-    }
+    public bool LojaCraft;
+
     private itensEmEstoque escolido = null;
 
     public botaoXCompra botao;
+    public API_Grid inventario;
     public void itemEscolido(itensEmEstoque dataItemEscolido)
     {
         escolido = dataItemEscolido;
@@ -27,7 +39,21 @@ public class GerenciadorDeComercio : MonoBehaviour
     
     public void attBotaoComprar()
     {
-        botao.attBotaoComprar(escolido.valor < Dinheiro.Carteira.valores);
+        if (LojaCraft)
+        {
+            botao.attBotaoComprar(escolido.valor < Dinheiro.Carteira.valores);
+        }
+        else
+        { bool temp = true;
+            foreach(var a in escolido.necessarios)
+            {
+                temp = inventario.temEstaQuantidade(a.item.id_, a.quantidade);
+                if (!temp)
+                    break;
+            }
+            botao.attBotaoComprar(temp);
+
+        }
     }
     public void comprar()
     {

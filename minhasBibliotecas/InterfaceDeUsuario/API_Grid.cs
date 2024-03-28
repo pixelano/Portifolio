@@ -7,7 +7,10 @@
     {
 
     public bool itensEmpilhaveis=false;
+    public bool SlotEspancivos = false;
     public int limiteDeStack = 64;
+
+
     public List<inventarioSlot> inventario;
           [System.Serializable]
         public class inventarioSlot{
@@ -62,13 +65,16 @@
 
         return tempb;
     }
+    public bool temEstaQuantidade(int id_, int quantidade)
+    {
+        inventarioSlot x = acheEsteItem(id_);
 
-
-
-
-
-
-
+        if(x != null)
+        {
+            return x.quantidade >= quantidade;
+        }
+        return false;
+    }
 
         public int adicionarEsteItem(DragAndDrop item,int inc_slot){
             int idPack = -1;
@@ -121,6 +127,7 @@
         public void removerEsteItem(DragAndDrop  item, bool transferencia){
 
         if(itensEmpilhaveis == false){
+
                 inventarioSlot temp_ = null;
                         foreach (var a in inventario ){
                                 if(a.id_stack == item.ID_pack){
@@ -153,18 +160,29 @@
                     }
         }
         }
-        
-    
-    
-        
+    public bool craft;
+    public List<ScriptavelItemData> ItensDisponiveis;
+public ScriptavelSalvarInventario Preset;
         public void Awake(){
-                    for(int x = 0 ;x < transform.childCount ; x++){
-    SlotInventario temp =  transform.GetChild(x).GetComponent<SlotInventario>();
-                    temp.gerenciadorDaGrid = this;
-                    temp.empilhavel = itensEmpilhaveis;
-                    temp.id_Slot = x;
-                    }
 
+       for(int x = 0;x < Preset.inventario.Count;x++)
+        {
+            inventarioSlot tem = new inventarioSlot();
+            tem.id_ = Preset.inventario[x].id_;
+            tem.id_stack = x;
+            tem.quantidade = Preset.inventario[x].quantidade;
+          
         }
+
+            for (int x = 0; x < transform.childCount; x++)
+            {
+                SlotInventario temp = transform.GetChild(x).GetComponent<SlotInventario>();
+                temp.gerenciadorDaGrid = this;
+                temp.empilhavel = itensEmpilhaveis;
+                temp.id_Slot = x;
+            }
+
+        
+    }
         
     }

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class botaoXCompra : MonoBehaviour
 {
     public GerenciadorDeComercio origem;
-    public GerenciadorDeComercio .itensEmEstoque data_;
+    public itensEmEstoque data_;
     public RawImage botaoComprar;
 
     bool comp;

@@ -70,7 +70,7 @@ public class DragAndDrop : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDrag
     }
    public void OnEndDrag(PointerEventData eventData){
 
-        if (draged)
+        if (draged) 
         {
             transform.SetParent(parentAfterDrag);
             image.raycastTarget = true;
