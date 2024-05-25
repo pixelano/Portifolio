@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 270d8090e884cda4ab7140998af39154, type: 3}
+  m_Name: caveira
+  m_EditorClassIdentifier: 
+  Equipavel: 2
+  TipoDeItem: 0
+  powers:
+  - {fileID: 11400000, guid: 35eb9b84909414b4d9874117e77e3e2f, type: 2}
+  icon: {fileID: 2800000, guid: b80241095f9e723488d99020a9eb227b, type: 3}
